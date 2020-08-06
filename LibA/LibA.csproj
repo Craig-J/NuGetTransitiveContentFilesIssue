@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <Content Include="ContentFiles\**" PackagePath="contentFiles\any\any;content" CopyToOutputDirectory="Always" PackageCopyToOutput="true" />
+    </ItemGroup>
+
+</Project>
